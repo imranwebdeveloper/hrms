@@ -1,5 +1,6 @@
 import React from "react";
 import DashboardHeader from "../Header/DashboardHeader";
+import Logo from "../Header/Logo";
 import Menu from "../sidebar/Menu";
 
 const Dashboard = ({ children }) => {
@@ -21,7 +22,10 @@ const Dashboard = ({ children }) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-        <Menu />
+        <div className="border-r p-4">
+          <Logo />
+          <Menu />
+        </div>
       </div>
     </div>
   );
